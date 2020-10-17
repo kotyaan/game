@@ -1,0 +1,48 @@
+progress = True
+print("Actions available: forward, look, pray")
+while progress:
+  action = input(">")
+  if action == "forward":
+    room = "end"
+    print("At this point I am supposed to tell you that you won the game, but I don't want you to win...yet")
+    print("You'll need more than that to win the game")
+  elif action == "look":
+    room = "invalid"
+    print("I thought we had this conversation before")
+    print("*You lose 5 sanity for repeating the same mistake*")
+  elif action == "pray":
+    room = "saved"
+    print("You get on your knees and cast a prayer...You feel a weird presence behind you after you finished your prayer")
+    print("You look behind and you see a demonic entity twice your size looking right at you...")
+    print("It wields a large blade which it uses to swing at you.")
+    print("Actions available: dodge, run, attack")
+    survive = input(">>")
+    if survive == "dodge":
+      print("You managed to trip on a rock while trying to dodge the entity's attack...")
+      print("The entity was able to catch a swing at you, and you start losing a lot of blood from your arm...")
+      print("The entity starts to drag your almost lifeless body towards a door that was not there before")
+      print("To be continued??")
+      progress = False
+    if survive == ("run"):
+      print("You start running for your life, and suprisigly the sword that the entity was holding was extremely heavy, and so it could not run as quickly as you...")
+      print("WOW YOU MANAGED TO OUTRUN THE ENTITY, CONGRATS, YOU'VE MADE OUT OF THE TUNNEL!!")
+      print("but the adventure is not done yet...")
+      progress = False
+    if survive ==("attack"):
+      print("You decided to counter-attack it's attack...")
+      print("You managed to hit the entity on the neck. You've done 20 damage to it, one more hit and it will be done for good.")
+      print("The creature is now extremely pissed off, what do you want to do now?")
+      print("Actions available: attack, attack, RIP AND TEAR")
+      attack = input(">>")
+      if attack == ("attack"):
+        print("You attacked it again and you managed to kill the entity, WOW you're so cool *sarcasm*, go on and go through that door...")
+        print("You'll be going to be next stage")
+        progress = False
+      if attack ==("RIP AND TEAR"):
+        print("There seems to be playing some sort of song(Rip & Tear)... You start to feel this sort of rage all around your body")
+        print("The entity tries to take another swing at you, but somehow you were fast enough to dodge it...")
+        print("You hit its leg and the entity falls right on this other leg...")
+        print("You bring its head to the floor and you start hitting it without mercy...")
+        print("Okay Mr. Doom Slayer, now that's what I'm talking about, good job man!")
+        print("I'm very impressed you aren't like the others...Go on and go through the tunnel, I'll be seeing you shortly")
+        progress = False
